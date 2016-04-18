@@ -685,6 +685,13 @@ app.get("/pdf/:reportType/:areaType/:indicator/:gender/:area", function(req, res
 
 });
 
+app.get("/", function(req,res) {
+  res.redirect("http://cisdata.soton.ac.uk/");
+});
 
+app.get("/data_visualisation", function(req,res) {
+  res.redirect("http://cisdata.soton.ac.uk/data_visualisation");
+});
 
 app.listen(3011);
+
